@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./raphael.js"></script>
+</head>
+<body>
+
+    <img src="02.png" id="plan">
+
+    <script>
+        const image = document.getElementById('plan')
+        // console.log(image.clientWidth)
+        width = image.clientWidth
+        height = image.clientHeight
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            //                x, y, w, h
+            // const p = Raphael(0, 0, 400, 400)
+
+            const p = Raphael(0, 0, width, height)
+            p.path("M786.45,228.48 L795.55,16.00 L479.12,16.00 L479.12,216.48 L595.45,216.48 L595.45,228.48 L595.78,240.48 L786.45,240.48Z")
+            .attr({
+                stroke: 'red'
+            }).hover(function() {
+                this.attr({ fill: "blue", opacity: 0.2 })
+            }, function() {
+                this.attr({ fill: "none" })
+            }).click(function() {
+                alert('PACLICKINTAS')
+            })
+
+            // p.rect(0, 0, 400, 400)
+            // p.rect(20, 20, 50, 50)
+        })
+    </script>
+</body>
+</html>
