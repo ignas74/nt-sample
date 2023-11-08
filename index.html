@@ -12,14 +12,14 @@
 
     <script>
         const image = document.getElementById('plan')
-        width = image.clientWidth
-        height = image.clientHeight
+        const w = image.clientWidth
+        const h = image.clientHeight
         
         document.addEventListener('DOMContentLoaded', () => {
             //                x, y, w, h
             // const p = Raphael(0, 0, 400, 400)
 
-            const p = Raphael(0, 0, width, height)
+            const p = Raphael(0, 0, w, h)
             p.path("M786.45,228.48 L795.55,16.00 L479.12,16.00 L479.12,216.48 L595.45,216.48 L595.45,228.48 L595.78,240.48 L786.45,240.48Z")
             .attr({
                 stroke: 'red'
