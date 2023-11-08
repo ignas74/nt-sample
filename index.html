@@ -12,7 +12,6 @@
 
     <script>
         const image = document.getElementById('plan')
-        // console.log(image.clientWidth)
         width = image.clientWidth
         height = image.clientHeight
         
@@ -27,13 +26,10 @@
             }).hover(function() {
                 this.attr({ fill: "blue", opacity: 0.2 })
             }, function() {
-                this.attr({ fill: "none" })
+                this.attr({ fill: "red" })
             }).click(function() {
                 alert('PACLICKINTAS')
             })
-
-            // p.rect(0, 0, 400, 400)
-            // p.rect(20, 20, 50, 50)
         })
     </script>
 </body>
